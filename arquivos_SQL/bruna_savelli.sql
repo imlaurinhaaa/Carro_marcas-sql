@@ -36,4 +36,18 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
 ('Pedro', 'Jaguar', 'I-Pace', 2023, 'Verde', 'Reino Unido', TRUE),
 ('Carlos', 'McLaren', '720S', 2020, 'Laranja', 'Reino Unido', TRUE),
 ('Beatriz', 'McLaren', 'P1', 2015, 'Amarelo', 'Reino Unido', FALSE),
-('Rafael', 'McLaren', 'Senna', 2018, 'Azul', 'Reino Unido', FALSE)
+('Rafael', 'McLaren', 'Senna', 2018, 'Azul', 'Reino Unido', FALSE);
+
+SELECT:
+SELECT modelo FROM carros WHERE marca = 'Ford';
+SELECT modelo FROM carros WHERE marca = 'Chevrolet';
+SELECT modelo FROM carros WHERE marca = 'Toyota';
+SELECT modelo FROM carros WHERE marca = 'Honda';
+SELECT modelo FROM carros WHERE marca = 'Lamborghini';
+SELECT modelo FROM carros WHERE marca = 'Maserati';
+SELECT modelo FROM carros WHERE marca = 'Mazda';
+SELECT modelo FROM carros WHERE marca = 'Porsche';
+SELECT modelo FROM carros WHERE marca = 'Rolls-Royce';
+SELECT modelo FROM carros WHERE marca = 'Jaguar';
+SELECT modelo FROM carros WHERE marca = 'Volkswagen';
+SELECT modelo FROM carros WHERE marca = 'Kia';
