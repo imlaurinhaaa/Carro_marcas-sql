@@ -47,3 +47,6 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
 ('André', 'Porsche', '918 Spyder', 2015, 'Preto', 'Alemanha', FALSE),
 ('Felipe', 'Porsche', 'Carrera GT', 2006, 'Vermelho', 'Alemanha', FALSE),
 ('Ricardo', 'Porsche', '959', 1987, 'Branco', 'Alemanha', FALSE);
+
+
+SELECT marca FROM carros WHERE pais_fabricacao = 'México'
