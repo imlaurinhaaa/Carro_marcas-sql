@@ -1,6 +1,6 @@
-INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabricacao, producao) VALUES (
+INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabricacao, producao) VALUES
     ('Lucas', 'Ford', 'Mustang', 2021, 'Vermelho', 'EUA', TRUE),
-    ('joão', 'Ford', 'F-150', 2020, 'Preto', 'EUA', TRUE),
+    ('João', 'Ford', 'F-150', 2020, 'Preto', 'EUA', TRUE),
     ('Marta', 'Ford', 'Explorer', 2019, 'Prata', 'EUA', TRUE),
     ('Carla', 'Ford', 'Escape', 2018, 'Azul', 'EUA', TRUE),
     ('Roberto', 'Ford', 'Focus', 2017, 'Branco', 'Alemanha', FALSE),
@@ -9,16 +9,16 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
     ('Eduardo', 'Ford', 'Expedition', 2022, 'Verde', 'EUA', TRUE),
     ('Felipe', 'Ford', 'Ranger', 2021, 'Vermelho', 'Argentina', TRUE),
     ('Daniel', 'Ford', 'Bronco', 2023, 'Amarelo', 'EUA', TRUE),
-    ('Marcos', 'Chevrolet', 'Silverado', 2022, 'azul', 'EUA', TRUE)
-    ('Julia', 'Chevrolet', 'Camaro', 2018, 'Amarelo', 'EUA', TRUE)
-    ('Thiago', 'Chevrolet', 'Malibu', 2016, 'Preto', 'EUA', FALSE)
-    ('Vanessa', 'Chevrolet', 'Equinox', 2020, 'Branco', 'México', TRUE)
-    ('Ana', 'Chevrolet', 'Traverse', 2021, 'Prata', 'EUA', TRUE)
-    ('Gustavo', 'Chevrolet', 'Tahoe', 2022, 'Verde', 'EUA', TRUE)
-    ('André', 'Chevrolet', 'Suburban', 2023, 'Cinza', 'EUA', TRUE)
-    ('Luís', 'Chevrolet', 'Colorado', 2020, 'Vermelho', 'EUA', TRUE)
-    ('Bruno', 'Chevrolet', 'Blazer', 2019, 'Preto', 'México', TRUE)
-    ('Camila', 'Chevrolet', 'Corvette', 2023, 'azul', 'EUA', TRUE)
+    ('Marcos', 'Chevrolet', 'Silverado', 2022, 'Azul', 'EUA', TRUE),
+    ('Julia', 'Chevrolet', 'Camaro', 2018, 'Amarelo', 'EUA', TRUE),
+    ('Thiago', 'Chevrolet', 'Malibu', 2016, 'Preto', 'EUA', FALSE),
+    ('Vanessa', 'Chevrolet', 'Equinox', 2020, 'Branco', 'México', TRUE),
+    ('Ana', 'Chevrolet', 'Traverse', 2021, 'Prata', 'EUA', TRUE),
+    ('Gustavo', 'Chevrolet', 'Tahoe', 2022, 'Verde', 'EUA', TRUE),
+    ('André', 'Chevrolet', 'Suburban', 2023, 'Cinza', 'EUA', TRUE),
+    ('Luís', 'Chevrolet', 'Colorado', 2020, 'Vermelho', 'EUA', TRUE),
+    ('Bruno', 'Chevrolet', 'Blazer', 2019, 'Preto', 'México', TRUE),
+    ('Camila', 'Chevrolet', 'Corvette', 2023, 'Azul', 'EUA', TRUE),
     ('Mariana', 'Toyota', 'Corolla', 2021, 'Prata', 'Japão', TRUE),
     ('Carlos', 'Toyota', 'Camry', 2020, 'Branco', 'Japão', TRUE),
     ('Fernanda', 'Toyota', 'RAV4', 2022, 'Preto', 'Japão', TRUE),
@@ -39,4 +39,3 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
     ('Fábio', 'Honda', 'HR-V', 2022, 'Preto', 'Brasil', TRUE),
     ('Elisa', 'Honda', 'Fit', 2018, 'Prata', 'Japão', FALSE),
     ('Rodrigo', 'Honda', 'Insight', 2021, 'Branco', 'Japão', FALSE);
-)
