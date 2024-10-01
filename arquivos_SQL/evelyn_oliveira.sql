@@ -1,4 +1,4 @@
-INSERT INTO carros (dono_carro, marca , modelo, ano_fabricacao, cor, pais_fabricacao, producao) VALUES (('Roberta', 'Volkswagen', 'Polo', 2019, 'Vermelho', 'Brasil', TRUE),
+INSERT INTO carros (dono_carro, marca , modelo, ano_fabricacao, cor, pais_fabricacao, producao) VALUES ('Roberta', 'Volkswagen', 'Polo', 2019, 'Vermelho', 'Brasil', TRUE),
 ('Miguel', 'Volkswagen', 'Arteon', 2021, 'Prata', 'Alemanha', TRUE),
 ('Larissa', 'Volkswagen', 'Atlas', 2022, 'Verde', 'EUA', TRUE),
 ('Lucas', 'Volkswagen', 'ID.4', 2023, 'Azul', 'Alemanha', TRUE),
@@ -30,7 +30,7 @@ INSERT INTO carros (dono_carro, marca , modelo, ano_fabricacao, cor, pais_fabric
 ('Fernanda', 'Kia', 'Sportage', 2022, 'Branco', 'Coreia do Sul', TRUE),
 ('Ricardo', 'Kia', 'Soul', 2020, 'Preto', 'Coreia do Sul', TRUE),
 ('Carla', 'Kia', 'Stinger', 2019, 'Vermelho', 'Coreia do Sul', TRUE),
-('Rodrigo', 'Kia', 'Telluride', 2022, 'Verde', 'EUA', TRUE);
+('Rodrigo', 'Kia', 'Telluride', 2022, 'Verde', 'EUA', TRUE),
 ('Amanda', 'Kia', 'Seltos', 2021, 'Cinza', 'Coreia do Sul', TRUE),
 ('Gustavo', 'Kia', 'Carnival', 2023, 'Prata', 'Coreia do Sul', TRUE),
 ('Mateus', 'Kia', 'Cadenza', 2020, 'Azul', 'Coreia do Sul', FALSE),
@@ -42,4 +42,4 @@ INSERT INTO carros (dono_carro, marca , modelo, ano_fabricacao, cor, pais_fabric
 ('Marcelo', 'Lamborghini', 'Aventador', 2021, 'Laranja', 'Itália', TRUE),
 ('Larrisa', 'Lamborghini', 'Huracán', 2022, 'Verde', 'Itália', TRUE),
 ('Bruno', 'Lamborghini', 'Urus', 2023, 'Preto', 'Itália', TRUE),
-('Lucas', 'Lamborghini', 'Gallardo', 2013, 'Branco', 'Itália', FALSE));
+('Lucas', 'Lamborghini', 'Gallardo', 2013, 'Branco', 'Itália', FALSE);
