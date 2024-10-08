@@ -78,3 +78,16 @@ UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  
 UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 180; 
 UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 109;  
 UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 120;
+
+DELETE FROM carros WHERE  id = 1;
+DELETE FROM carros WHERE  id = 115;
+DELETE FROM carros WHERE  id = 29;
+DELETE FROM carros WHERE  id = 94;
+DELETE FROM carros WHERE  id = 103;
+DELETE FROM carros WHERE  id = 61;
+DELETE FROM carros WHERE  id = 7;
+DELETE FROM carros WHERE  id = 85;
+DELETE FROM carros WHERE  id = 91;        
+DELETE FROM carros WHERE  id = 11;   
+DELETE FROM carros WHERE  id = 173;           
+DELETE FROM carros WHERE  ano_fabricacao < 2000;
