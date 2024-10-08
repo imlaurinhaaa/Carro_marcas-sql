@@ -82,3 +82,16 @@ UPDATE carros SET pais_fabricacao = CONCAT( 'MADE IN: ', pais_fabricacao) WHERE 
 UPDATE carros SET pais_fabricacao = CONCAT( 'MADE IN: ', pais_fabricacao) WHERE id = 156;
 UPDATE carros SET pais_fabricacao = CONCAT( 'MADE IN: ', pais_fabricacao) WHERE id = 113;
 UPDATE carros SET pais_fabricacao = CONCAT( 'MADE IN: ', pais_fabricacao) WHERE id = 92;
+
+DELETE FROM  carros WHERE modelo = '918 Spyder';
+DELETE FROM  carros WHERE modelo = 'F12 Berlinetta';
+DELETE FROM  carros WHERE modelo = 'Crosstrek';
+DELETE FROM  carros WHERE modelo = 'Impreza';
+DELETE FROM  carros WHERE modelo = 'Carrera GT';
+DELETE FROM  carros WHERE modelo = 'Ascent';
+DELETE FROM  carros WHERE modelo = 'Tribeca';
+DELETE FROM  carros WHERE modelo = 'Macan';
+DELETE FROM  carros WHERE modelo = 'WRX';
+DELETE FROM  carros WHERE modelo = 'BRZ';
+DELETE FROM  carros WHERE modelo = 'GTC4Lusso';
+DELETE FROM  carros WHERE modelo = 'Outback';
