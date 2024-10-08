@@ -49,4 +49,15 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
 ('Ricardo', 'Porsche', '959', 1987, 'Branco', 'Alemanha', FALSE);
 
 
-SELECT marca FROM carros WHERE pais_fabricacao = 'México'
+SELECT marca FROM carros WHERE pais_fabricacao = 'México';
+SELECT marca FROM carros WHERE pais_fabricacao = 'Itália';
+SELECT marca FROM carros WHERE pais_fabricacao = 'Brasil';
+SELECT marca FROM carros WHERE pais_fabricacao = 'Argentina';
+SELECT marca FROM carros WHERE pais_fabricacao = 'Canadá';
+SELECT marca FROM carros WHERE pais_fabricacao = 'Reino Unido';
+SELECT modelo FROM carros WHERE ano_fabricacao = 2020;
+SELECT modelo FROM carros WHERE ano_fabricacao = 2022;
+SELECT modelo FROM carros WHERE ano_fabricacao = 2021;
+SELECT modelo FROM carros WHERE ano_fabricacao = 2018;
+SELECT modelo FROM carros WHERE ano_fabricacao = 2023;
+SELECT modelo FROM carros WHERE ano_fabricacao = 2019;
