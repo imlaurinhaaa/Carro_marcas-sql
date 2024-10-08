@@ -39,7 +39,6 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
 ('Rafael', 'McLaren', 'Senna', 2018, 'Azul', 'Reino Unido', FALSE);
 
 -- SELECT
-
 SELECT modelo FROM carros WHERE marca = 'Ford';
 SELECT modelo FROM carros WHERE marca = 'Chevrolet';
 SELECT modelo FROM carros WHERE marca = 'Toyota';
@@ -52,3 +51,25 @@ SELECT modelo FROM carros WHERE marca = 'Rolls-Royce';
 SELECT modelo FROM carros WHERE marca = 'Jaguar';
 SELECT modelo FROM carros WHERE marca = 'Volkswagen';
 SELECT modelo FROM carros WHERE marca = 'Kia';
+
+-- UPDATE
+UPDATE carros SET modelo = CONCAT(modelo, ' - 963cv') WHERE modelo = 'LaFerrari';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 800cv') WHERE modelo = 'Countach';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 510/535cv') WHERE modelo = 'Vantage';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 800cv') WHERE modelo = 'Senna';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 249cv') WHERE modelo = 'E-Pace';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 300cv') WHERE modelo = 'F-Type';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 537cv') WHERE modelo = 'Mulsanne';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 750cv') WHERE modelo = 'Veneno';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 350cv') WHERE modelo = 'Miura';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 550cv') WHERE modelo = 'Diablo';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 461cv') WHERE modelo = 'Camaro';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 116cv') WHERE modelo = 'Beetle (Fusca)';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 156/204cv') WHERE modelo = 'X1';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 151cv') WHERE modelo = 'Sentra';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 603cv') WHERE modelo = 'GLE';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 150cv') WHERE modelo = 'Forester';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 408/761cv') WHERE modelo = 'Taycan';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 155cv') WHERE modelo = 'MX-5 Miata';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 374cv') WHERE modelo = 'i8';
+UPDATE carros SET modelo = CONCAT(modelo, ' - 462/700cv') WHERE modelo = 'Panemera';
