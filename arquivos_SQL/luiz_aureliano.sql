@@ -76,4 +76,15 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
         UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Santos') WHERE marca = 'Maserati';
         UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Pereira') WHERE marca = 'Subaru';
 
-
+        DELETE FROM carros WHERE dono_carro = 'Gustavo Souza';
+        DELETE FROM carros WHERE dono_carro = 'Júlia Souza';
+        DELETE FROM carros WHERE dono_carro = 'Roberta Santos';
+        DELETE FROM carros WHERE dono_carro = 'Adriana Souza';
+        DELETE FROM carros WHERE dono_carro = 'Felipe Pereira';
+        DELETE FROM carros WHERE dono_carro = 'André Marques';
+        DELETE FROM carros WHERE dono_carro = 'Ricardo Oliveira';
+        DELETE FROM carros WHERE dono_carro = 'Fábio Oliveira';
+        DELETE FROM carros WHERE dono_carro = 'Karina Silva';
+        DELETE FROM carros WHERE dono_carro = 'Rafael Oliveira';
+        DELETE FROM carros WHERE dono_carro = 'Lucas Souza';
+        DELETE FROM carros WHERE dono_carro = 'Isabela Pereira';
