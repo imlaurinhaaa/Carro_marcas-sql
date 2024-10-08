@@ -1,4 +1,4 @@
-INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabricacao,) VALUES 
+INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabricacao, producao) VALUES 
 ('Claudio', 'Tesla', 'Model S', 2022, 'Prata', 'EUA', TRUE),
 ('Renata', 'Tesla', 'Model 3', 2020, 'Branco', 'EUA', TRUE),
 ('Marina', 'Tesla', 'Model X', 2021, 'Vermelho', 'EUA', TRUE),
