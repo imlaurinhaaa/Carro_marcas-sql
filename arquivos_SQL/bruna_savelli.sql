@@ -73,3 +73,17 @@ UPDATE carros SET modelo = CONCAT(modelo, ' - 408/761cv') WHERE modelo = 'Taycan
 UPDATE carros SET modelo = CONCAT(modelo, ' - 155cv') WHERE modelo = 'MX-5 Miata';
 UPDATE carros SET modelo = CONCAT(modelo, ' - 374cv') WHERE modelo = 'i8';
 UPDATE carros SET modelo = CONCAT(modelo, ' - 462/700cv') WHERE modelo = 'Panemera';
+
+-- DELETE
+DELETE FROM carros WHERE dono_carro LIKE '%Martins';
+DELETE FROM carros WHERE dono_carro LIKE '%Lima';
+DELETE FROM carros WHERE dono_carro LIKE '%Gomes';
+DELETE FROM carros WHERE dono_carro LIKE '%Mendes';
+DELETE FROM carros WHERE dono_carro LIKE '%Souza';
+DELETE FROM carros WHERE dono_carro LIKE '%Oliveira';
+DELETE FROM carros WHERE dono_carro LIKE '%mint';
+DELETE FROM carros WHERE dono_carro LIKE '%Silva';
+DELETE FROM carros WHERE dono_carro LIKE '%Santos';
+DELETE FROM carros WHERE cor = 'Prata';
+DELETE FROM carros WHERE cor = 'Amarelo Ensolarado';
+DELETE FROM carros WHERE cor = 'Branco Alma';
