@@ -122,3 +122,63 @@ Delete FROM carros WHERE id = 174;
 Delete FROM carros WHERE id = 166;
 Delete FROM carros WHERE id = 150;
 Delete FROM carros WHERE id = 154;
+
+SELECT AVG(ano_fabricacao)
+AS media_ano
+FROM carros WHERE ano_fabricacao BETWEEN 2015 AND 2020;
+
+SELECT AVG(ano_fabricacao)
+AS media_sem_alemanha
+FROM carros WHERE pais_fabricacao NOT IN ('Alemanha');
+
+SELECT COUNT(*)
+AS contagem
+FROM carros;
+
+SELECT COUNT(*)
+AS contagem_toyota
+FROM carros WHERE marca = 'Toyota';
+
+SELECT COUNT(*)
+AS contagem_cor_preta
+FROM carros WHERE cor = 'Preto Fóssil';
+
+SELECT COUNT(*)
+AS contagem_2020 
+FROM carros WHERE ano_fabricacao = 2020;
+
+SELECT COUNT(*)
+AS contagem_alemanha 
+FROM carros WHERE pais_fabricacao = 'Alemanha';
+
+SELECT COUNT(*)
+AS contagem_a8
+FROM carros WHERE modelo = 'A8';
+
+SELECT COUNT(*)
+AS contagem_dono
+FROM carros WHERE dono_carro = 'Otávio';
+
+SELECT COUNT(*)
+AS contagem_producao
+FROM carros WHERE producao != TRUE;
+
+SELECT COUNT(*)
+AS contagem_branco
+FROM carros WHERE cor = 'Verde Wild' AND ano_fabricacao = 2018;
+
+SELECT COUNT(*)
+AS contagem_audi_alemanha 
+FROM carros WHERE marca = 'Audi' AND pais_fabricacao = 'Alemanha';
+
+SELECT COUNT(*)
+AS contagem_ano_2010_2020
+FROM carros WHERE ano_fabricacao BETWEEN 2010 AND 2020;
+
+SELECT COUNT(*)
+AS contagem_azul_alemanha_japao 
+FROM carros WHERE cor = 'Azul Crystal' AND pais_fabricacao IN ('Alemanha', 'Japão');
+
+SELECT SUM(ano_fabricacao)
+AS soma_2009_2021
+FROM carros WHERE ano_fabricacao BETWEEN 2009 AND 2021
