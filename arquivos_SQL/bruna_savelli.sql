@@ -38,7 +38,8 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
 ('Beatriz', 'McLaren', 'P1', 2015, 'Amarelo', 'Reino Unido', FALSE),
 ('Rafael', 'McLaren', 'Senna', 2018, 'Azul', 'Reino Unido', FALSE);
 
-SELECT:
+-- SELECT
+
 SELECT modelo FROM carros WHERE marca = 'Ford';
 SELECT modelo FROM carros WHERE marca = 'Chevrolet';
 SELECT modelo FROM carros WHERE marca = 'Toyota';
