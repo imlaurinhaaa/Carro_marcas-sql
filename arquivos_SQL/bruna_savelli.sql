@@ -87,3 +87,56 @@ DELETE FROM carros WHERE dono_carro LIKE '%Santos';
 DELETE FROM carros WHERE cor = 'Prata';
 DELETE FROM carros WHERE cor = 'Amarelo Ensolarado';
 DELETE FROM carros WHERE cor = 'Branco Alma';
+
+-- FUNÇÕES
+SELECT AVG(ano_fabricacao) AS media_fabricacao_carros_azul_crystal
+FROM carros
+WHERE cor = 'Azul Crystal';
+
+SELECT COUNT(*) AS all_toyota
+FROM carros
+WHERE marca = 'Toyota';
+
+SELECT AVG(ano_fabricacao) AS media_carros_2010_2020
+FROM carros
+WHERE ano_fabricacao BETWEEN 2010 AND 2020;
+
+SELECT AVG(ano_fabricacao) AS audi_vermelhoTint
+FROM carros
+WHERE cor = 'Vermelho Tint' AND marca = 'Audi';
+
+SELECT AVG(ano_fabricacao) AS media_paises_AleJapEUA
+FROM carros
+WHERE pais_fabricacao IN ('Alemanha', 'Japão', 'EUA');
+
+SELECT SUM(ano_fabricacao) AS soma_fabricacao_menor2020
+FROM carros
+WHERE marca = 'Audi' AND ano_fabricacao < 2020;
+
+SELECT AVG(ano_fabricacao)
+FROM carros
+WHERE ano_fabricacao > 2015;
+
+SELECT SUM(ano_fabricacao)
+FROM carros
+WHERE marca = 'Toyota';
+
+SELECT AVG(ano_fabricacao) 
+FROM carros
+WHERE cor IN ('Verde Wild', 'Cinza Fux');
+
+SELECT AVG(ano_fabricacao)
+FROM carros
+WHERE marca = 'Mercedes-Benz';
+
+SELECT AVG(ano_fabricacao)
+FROM carros
+WHERE cor = 'Azul Crystal' AND pais_fabricacao = 'EUA';
+
+SELECT COUNT(ano_fabricacao)
+FROM carros
+WHERE ano_fabricacao > 2015;
+
+SELECT COUNT(ano_fabricacao)
+FROM carros
+WHERE dono_carro IN ('Gabriel', 'Marina');
