@@ -54,3 +54,26 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
         SELECT * FROM carros WHERE pais_fabricacao = 'Coreia do Sul';
         SELECT * FROM carros WHERE pais_fabricacao = 'Alemanha';
         SELECT * FROM carros WHERE pais_fabricacao = 'EUA';
+
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Silva') WHERE marca = 'Ferrari';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Marques') WHERE marca = 'Porsche';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Oliveira') WHERE marca = 'Mazda';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Santos') WHERE marca = 'Chevrolet';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Pereira') WHERE marca = 'Toyota';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Gomes') WHERE marca = 'Honda';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Mendes') WHERE marca = 'Ford';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Silva') WHERE marca = 'McLaren';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Souza') WHERE marca = 'Jaguar';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Martins') WHERE marca = 'Aston Martin';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Oliveira') WHERE marca = 'Bentley';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Santos') WHERE marca = 'Rolls-Royce';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Lima') WHERE marca = 'Aston Martin';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Silva') WHERE marca = 'Nissan';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Souza') WHERE marca = 'Hyundai';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Martins') WHERE marca = 'Volkswagen';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Oliveira') WHERE marca = 'Kia';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' mint') WHERE marca = 'Lamborghini';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Santos') WHERE marca = 'Maserati';
+        UPDATE carros SET dono_carro = CONCAT(dono_carro, ' Pereira') WHERE marca = 'Subaru';
+
+
