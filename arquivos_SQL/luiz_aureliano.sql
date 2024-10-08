@@ -39,3 +39,18 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
     ('Fábio', 'Honda', 'HR-V', 2022, 'Preto', 'Brasil', TRUE),
     ('Elisa', 'Honda', 'Fit', 2018, 'Prata', 'Japão', FALSE),
     ('Rodrigo', 'Honda', 'Insight', 2021, 'Branco', 'Japão', FALSE);
+
+
+        SELECT * FROM carros WHERE cor = 'Azul';
+        SELECT * FROM carros WHERE cor = 'Branco';
+        SELECT * FROM carros WHERE cor = 'Cinza';
+        SELECT * FROM carros WHERE cor = 'Amarelo';
+        SELECT * FROM carros WHERE cor = 'Preto';
+        SELECT * FROM carros WHERE cor = 'Vermelho';
+        SELECT * FROM carros WHERE cor = 'Prata';
+        SELECT * FROM carros WHERE cor = 'Laranja';
+
+        SELECT * FROM carros WHERE pais_fabricacao = 'Japão';
+        SELECT * FROM carros WHERE pais_fabricacao = 'Coreia do Sul';
+        SELECT * FROM carros WHERE pais_fabricacao = 'Alemanha';
+        SELECT * FROM carros WHERE pais_fabricacao = 'EUA';
