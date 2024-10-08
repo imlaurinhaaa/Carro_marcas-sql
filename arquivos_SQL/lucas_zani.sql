@@ -88,3 +88,24 @@ WHERE dono_carro LIKE 'B%'
 SELECT marca
 FROM carros 
 WHERE dono_carro LIKE 'S%'
+
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Cybertruck';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'X3';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Classe C';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'A3';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Q3';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Portofino';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'CX-59';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Mazda CX-90';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Legacy';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = '718 Cayman';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Rogue';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Kona';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Rio';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'K900';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Huracán';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Reventón';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Ghibli';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'MC20';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Cullinan';
+UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'XE';
