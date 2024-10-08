@@ -43,3 +43,17 @@ INSERT INTO carros (dono_carro, marca , modelo, ano_fabricacao, cor, pais_fabric
 ('Larrisa', 'Lamborghini', 'Huracán', 2022, 'Verde', 'Itália', TRUE),
 ('Bruno', 'Lamborghini', 'Urus', 2023, 'Preto', 'Itália', TRUE),
 ('Lucas', 'Lamborghini', 'Gallardo', 2013, 'Branco', 'Itália', FALSE);
+
+
+SELECT * FROM carros WHERE  producao = TRUE;
+SELECT * FROM carros WHERE  producao = FALSE;
+SELECT * FROM carros WHERE  ano_fabricacao > 2015;
+SELECT * FROM carros WHERE  ano_fabricacao > 2020;
+SELECT * FROM carros WHERE  ano_fabricacao > 2000;
+SELECT * FROM carros WHERE  ano_fabricacao < 2015;
+SELECT * FROM carros WHERE  ano_fabricacao < 2021;
+SELECT * FROM carros WHERE  ano_fabricacao < 2000;
+SELECT * FROM carros WHERE  ano_fabricacao < 2017;
+SELECT * FROM carros WHERE  marca LIKE 'C%';
+SELECT * FROM carros WHERE  marca LIKE 'M%';
+SELECT * FROM carros WHERE  marca LIKE 'S%';
