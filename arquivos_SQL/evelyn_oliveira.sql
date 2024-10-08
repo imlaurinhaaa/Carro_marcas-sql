@@ -91,3 +91,17 @@ DELETE FROM carros WHERE  id = 91;
 DELETE FROM carros WHERE  id = 11;   
 DELETE FROM carros WHERE  id = 173;           
 DELETE FROM carros WHERE  ano_fabricacao < 2000;
+
+
+SELECT SUM (ano_fabricacao) AS somatotal_fabricacao FROM carros;
+SELECT SUM (ano_fabricacao) AS soma_ano_menor FROM carros WHERE  ano_fabricacao < 2020;
+SELECT SUM (id) AS soma_fabricados_alemanha FROM carros WHERE  pais_fabricacao = 'Alemanha';
+SELECT SUM (id) AS soma_BMW FROM carros WHERE  marca = 'BMW';
+SELECT SUM (id) AS soma_ano_pais FROM carros WHERE  ano_fabricacao > 2020 AND  pais_fabricacao = 'Japão';
+SELECT SUM (id) AS soma_ano_modelo FROM carros WHERE  ano_fabricacao > 2020 AND  modelo LIKE 'S%';
+SELECT AVG (ano_fabricacao) AS media_ano_fabricacao FROM carros;
+SELECT AVG (ano_fabricacao) AS media_ano_fabricacao FROM carros WHERE  ano_fabricacao > 2020;
+SELECT AVG (id) AS media_producao FROM carros WHERE  producao = TRUE;
+SELECT COUNT (ano_fabricacao) AS qtd_fabricados FROM carros WHERE dono_carro LIKE 'G%';
+SELECT COUNT (dono_carro) AS qtd_dono FROM carros WHERE  dono_carro = 'Fernanda';
+SELECT COUNT (modelo) AS qtd_modelos FROM carros WHERE  modelo LIKE 'C%';
