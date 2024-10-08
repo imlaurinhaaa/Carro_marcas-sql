@@ -88,3 +88,19 @@ INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabrica
         DELETE FROM carros WHERE dono_carro = 'Rafael Oliveira';
         DELETE FROM carros WHERE dono_carro = 'Lucas Souza';
         DELETE FROM carros WHERE dono_carro = 'Isabela Pereira';
+
+
+        SELECT COUNT(*) FROM carros WHERE cor = 'Azul Crystal' AND pais_fabricacao IN ('EUA', 'Alemanha');
+        SELECT COUNT(*) FROM carros WHERE producao = False;
+        SELECT COUNT(*) FROM carros WHERE pais_fabricacao NOT IN ('Alemanha', 'França', 'Itália');
+        SELECT COUNT(*) FROM carros WHERE ano_fabricacao = 2020;
+        SELECT COUNT(*) FROM carros WHERE ano_fabricacao > 2020;
+        SELECT COUNT(*) FROM carros WHERE cor = 'Preto Fóssil' AND ano_fabricacao BETWEEN 2019 AND 2023;
+        SELECT COUNT(*) FROM carros WHERE dono_carro IN ('Rodrigo Pereira', 'Gabriel Marques');
+        SELECT COUNT(*) FROM carros WHERE cor IN ('Verde Wild', 'Cinza Fux');
+        SELECT COUNT(*) FROM carros WHERE ano_fabricacao = 2023 AND pais_fabricacao IN ('EUA', 'Japão');
+
+
+        SELECT SUM(ano_fabricacao) AS soma_Tesla FROM carros WHERE marca = 'Tesla';
+
+        SELECT AVG(ano_fabricacao) AS media_anos FROM carros WHERE ano_fabricacao  BETWEEN 2019 AND 2023;
