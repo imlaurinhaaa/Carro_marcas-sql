@@ -95,3 +95,16 @@ DELETE FROM  carros WHERE modelo = 'WRX';
 DELETE FROM  carros WHERE modelo = 'BRZ';
 DELETE FROM  carros WHERE modelo = 'GTC4Lusso';
 DELETE FROM  carros WHERE modelo = 'Outback';
+
+SELECT SUM(ano_fabricacao) AS soma_cores_cinza_fux FROM carros WHERE cor = 'Cinza Fux';
+SELECT SUM(ano_fabricacao) AS soma_cores_preto_fossil FROM carros WHERE cor = 'Preto Fóssil';
+SELECT SUM(ano_fabricacao) AS soma_cores_verde_wild FROM carros WHERE cor = 'Verde Wild';
+SELECT SUM(ano_fabricacao) AS soma_vermelho_tint FROM carros WHERE cor = 'Vermelho Tint';
+SELECT SUM(ano_fabricacao) AS soma_cores_azul_crystal FROM carros WHERE cor = 'Azul Crystal';
+SELECT AVG(ano_fabricacao) AS media_ano_italia FROM carros WHERE pais_fabricacao = 'Alemanha';
+SELECT AVG(ano_fabricacao) AS media_ano_eua FROM carros WHERE pais_fabricacao = 'EUA';
+SELECT AVG(ano_fabricacao) AS media_ano_japao FROM carros WHERE pais_fabricacao = 'Japão';
+SELECT COUNT(ano_fabricacao) AS conta_ano_tesla FROM carros WHERE marca = 'Tesla';
+SELECT COUNT(ano_fabricacao) AS conta_ano_toyota FROM carros WHERE marca = 'Toyota';
+SELECT COUNT(ano_fabricacao) AS conta_ano_bmw FROM carros WHERE marca = 'BMW';
+SELECT COUNT(ano_fabricacao) AS conta_ano_audi FROM carros WHERE marca = 'Audi';
