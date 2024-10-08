@@ -1,4 +1,3 @@
-
 INSERT INTO carros (dono_carro, marca, modelo, ano_fabricacao, cor, pais_fabricacao, producao) VALUES 
 ('Claudio', 'Tesla', 'Model S', 2022, 'Prata', 'EUA', TRUE),
 ('Renata', 'Tesla', 'Model 3', 2020, 'Branco', 'EUA', TRUE),
@@ -90,23 +89,96 @@ SELECT marca
 FROM carros 
 WHERE dono_carro LIKE 'S%'
 
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Cybertruck';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'X3';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Classe C';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'A3';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Q3';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Portofino';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'CX-59';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Mazda CX-90';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Legacy';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = '718 Cayman';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Rogue';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Kona';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Rio';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'K900';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Huracán';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Reventón';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Ghibli';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'MC20';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'Cullinan';
-UPDATE carros SET modelo = CONCAT(modelo, 'fabricação interrompida') WHERE producao modelo = 'XE';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Cybertruck';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE  modelo = 'X3';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE  modelo = 'Classe C';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE  modelo = 'A3';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE  modelo = 'Q3';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Portofino';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'CX-59';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Mazda CX-90';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Legacy';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = '718 Cayman';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Rogue';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Kona';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Rio';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'K900';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Huracán';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Reventón';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Ghibli';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'MC20';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'Cullinan';
+UPDATE carros SET modelo = CONCAT(modelo, ' fabricação interrompida') WHERE modelo = 'XE';
+
+DELETE FROM carros WHERE pais_fabricacao = 'Alemanha' AND dono_carro = 'Bruno';
+DELETE FROM carros WHERE pais_fabricacao = 'Alemanha' AND dono_carro = 'Alice';
+DELETE FROM carros WHERE pais_fabricacao = 'Alemanha' AND dono_carro = 'Daniela';
+DELETE FROM carros WHERE pais_fabricacao = 'Alemanha' AND dono_carro = 'Vanessa';
+DELETE FROM carros WHERE pais_fabricacao = 'MADE IN: EUA';
+DELETE FROM carros WHERE pais_fabricacao = 'MADE IN: Alemanha';
+DELETE FROM carros WHERE pais_fabricacao = 'MADE IN: Japão';
+Delete FROM carros WHERE id = 27;
+Delete FROM carros WHERE id = 174;
+Delete FROM carros WHERE id = 166;
+Delete FROM carros WHERE id = 150;
+Delete FROM carros WHERE id = 154;
+
+SELECT AVG(ano_fabricacao)
+AS media_ano
+FROM carros WHERE ano_fabricacao BETWEEN 2015 AND 2020;
+
+SELECT AVG(ano_fabricacao)
+AS media_sem_alemanha
+FROM carros WHERE pais_fabricacao NOT IN ('Alemanha');
+
+SELECT COUNT(*)
+AS contagem
+FROM carros;
+
+SELECT COUNT(*)
+AS contagem_toyota
+FROM carros WHERE marca = 'Toyota';
+
+SELECT COUNT(*)
+AS contagem_cor_preta
+FROM carros WHERE cor = 'Preto Fóssil';
+
+SELECT COUNT(*)
+AS contagem_2020 
+FROM carros WHERE ano_fabricacao = 2020;
+
+SELECT COUNT(*)
+AS contagem_alemanha 
+FROM carros WHERE pais_fabricacao = 'Alemanha';
+
+SELECT COUNT(*)
+AS contagem_a8
+FROM carros WHERE modelo = 'A8';
+
+SELECT COUNT(*)
+AS contagem_dono
+FROM carros WHERE dono_carro = 'Otávio';
+
+SELECT COUNT(*)
+AS contagem_producao
+FROM carros WHERE producao != TRUE;
+
+SELECT COUNT(*)
+AS contagem_branco
+FROM carros WHERE cor = 'Verde Wild' AND ano_fabricacao = 2018;
+
+SELECT COUNT(*)
+AS contagem_audi_alemanha 
+FROM carros WHERE marca = 'Audi' AND pais_fabricacao = 'Alemanha';
+
+SELECT COUNT(*)
+AS contagem_ano_2010_2020
+FROM carros WHERE ano_fabricacao BETWEEN 2010 AND 2020;
+
+SELECT COUNT(*)
+AS contagem_azul_alemanha_japao 
+FROM carros WHERE cor = 'Azul Crystal' AND pais_fabricacao IN ('Alemanha', 'Japão');
+
+SELECT SUM(ano_fabricacao)
+AS soma_2009_2021
+FROM carros WHERE ano_fabricacao BETWEEN 2009 AND 2021
