@@ -43,3 +43,51 @@ INSERT INTO carros (dono_carro, marca , modelo, ano_fabricacao, cor, pais_fabric
 ('Larrisa', 'Lamborghini', 'Huracán', 2022, 'Verde', 'Itália', TRUE),
 ('Bruno', 'Lamborghini', 'Urus', 2023, 'Preto', 'Itália', TRUE),
 ('Lucas', 'Lamborghini', 'Gallardo', 2013, 'Branco', 'Itália', FALSE);
+
+
+SELECT * FROM carros WHERE  producao = TRUE;
+SELECT * FROM carros WHERE  producao = FALSE;
+SELECT * FROM carros WHERE  ano_fabricacao > 2015;
+SELECT * FROM carros WHERE  ano_fabricacao > 2020;
+SELECT * FROM carros WHERE  ano_fabricacao > 2000;
+SELECT * FROM carros WHERE  ano_fabricacao < 2015;
+SELECT * FROM carros WHERE  ano_fabricacao < 2021;
+SELECT * FROM carros WHERE  ano_fabricacao < 2000;
+SELECT * FROM carros WHERE  ano_fabricacao < 2017;
+SELECT * FROM carros WHERE  marca LIKE 'C%';
+SELECT * FROM carros WHERE  marca LIKE 'M%';
+SELECT * FROM carros WHERE  marca LIKE 'S%';
+
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN:' pais_fabricacao) WHERE  id = 1;
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 25;
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 39;
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 44;
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 52;
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 60;
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 7;
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 85;
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 91;        
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 117;   
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 190;           
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 200;       
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 153;   
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 146;    
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 159;   
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 168;   
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 171;   
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 180; 
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 109;  
+UPDATE carros SET pais_fabricacao = CONCAT('MADE IN: ', pais_fabricacao) WHERE  id = 120;
+
+DELETE FROM carros WHERE  id = 1;
+DELETE FROM carros WHERE  id = 115;
+DELETE FROM carros WHERE  id = 29;
+DELETE FROM carros WHERE  id = 94;
+DELETE FROM carros WHERE  id = 103;
+DELETE FROM carros WHERE  id = 61;
+DELETE FROM carros WHERE  id = 7;
+DELETE FROM carros WHERE  id = 85;
+DELETE FROM carros WHERE  id = 91;        
+DELETE FROM carros WHERE  id = 11;   
+DELETE FROM carros WHERE  id = 173;           
+DELETE FROM carros WHERE  ano_fabricacao < 2000;
